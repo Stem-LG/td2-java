@@ -25,7 +25,7 @@ public class Facture {
 
     public boolean removeLigne(int id) {
         int size = lignes.size();
-        if (id < size)
+        if (id > size && id > 1)
             return false;
         else {
             LigneFacture l = lignes.get(id - 1);
